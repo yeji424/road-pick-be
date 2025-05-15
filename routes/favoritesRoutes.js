@@ -19,7 +19,7 @@ function authenticate(req, res, next) {
 
 // ── 찜 추가 (POST /favorites)
 router.post('/', authenticate, async (req, res) => {
-  const { contentid } = req.body
+  const { contentid, contenttypeid, firstimage, title, addr1, addr2, mapx, mapy } = req.body
   try {
     // 중복 검사: 동일 contentid가 이미 찜되어 있는지 확인
     const exists = await Favorite.findOne({
@@ -32,7 +32,16 @@ router.post('/', authenticate, async (req, res) => {
 
     const fav = new Favorite({
       user: req.userId,
-      destination: { contentid },
+      destination: {
+        contentid,
+        contenttypeid,
+        firstimage,
+        title,
+        addr1,
+        addr2,
+        mapx,
+        mapy,
+      },
     })
     await fav.save()
     res.status(201).json({ message: '찜 추가', favorite: fav })

@@ -90,14 +90,42 @@ router.get('/profile', async (req, res) => {
     res.status(401).json({ message: '유효하지 않은 토큰' })
   }
 })
+// ── 사용자 프로필 수정
+router.put('/profile', async (req, res) => {
+  try {
+    const token = req.cookies?.token
+    if (!token) return res.status(401).json({ message: '로그인 필요' })
 
+    const payload = jwt.verify(token, process.env.JWT_SECRET)
+
+    const { name } = req.body
+    if (!name || name.trim() === '') {
+      return res.status(400).json({ message: '이름은 필수입니다.' })
+    }
+
+    const updatedUser = await User.findByIdAndUpdate(
+      payload.id,
+      { name: name.trim() },
+      { new: true }
+    ).select('-password -__v')
+
+    if (!updatedUser) {
+      return res.status(404).json({ message: '사용자를 찾을 수 없습니다.' })
+    }
+
+    res.json(updatedUser)
+  } catch (err) {
+    console.error(err)
+    return res.status(500).json({ message: '프로필 수정 실패' })
+  }
+})
 // ── 로그아웃
 router.post('/logout', (req, res) => {
   res
     .cookie('token', '', {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
-      sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
+      sameSite: 'Strict',
       path: '/',
       maxAge: 0,
     })
