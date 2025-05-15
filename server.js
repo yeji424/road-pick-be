@@ -12,6 +12,7 @@ import favoritesRoutes from './routes/favoritesRoutes.js'
 
 import accountRoutes from './routes/accountRoutes.js'
 import scheduleRoutes from './routes/scheduleRoutes.js'
+import scheduleDetailRoutes from './routes/scheduleDetailRoutes.js'
 
 dotenv.config()
 const app = express()
@@ -73,6 +74,7 @@ app.use(cookieParser())
 app.use('/auth', accountRoutes)
 app.use('/favorites', favoritesRoutes)
 app.use('/schedule', scheduleRoutes)
+app.use('/scheduledetail', scheduleDetailRoutes)
 
 const PORT = process.env.PORT || 5000
 mongoose
