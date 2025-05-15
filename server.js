@@ -7,6 +7,7 @@ import rateLimit from 'express-rate-limit'
 import xss from 'xss'
 import cookieParser from 'cookie-parser'
 import sanitize from '@exortek/express-mongo-sanitize'
+import favoritesRoutes from './routes/favoritesRoutes.js'
 //import csurf from 'csurf'
 
 import accountRoutes from './routes/accountRoutes.js'
@@ -69,6 +70,7 @@ app.use(cookieParser())
 // })
 
 app.use('/auth', accountRoutes)
+app.use('/favorites', favoritesRoutes)
 
 const PORT = process.env.PORT || 5000
 mongoose
