@@ -62,13 +62,13 @@ app.use(sanitize({ locations: ['body', 'params'] }))
 // 4) sanitizeBody 적용
 app.use(sanitizeBody)
 
-app.use(
-  rateLimit({
-    windowMs: 15 * 60 * 1000,
-    max: 100,
-    message: '너무 많은 요청을 보냈습니다. 잠시 후 다시 시도하세요.',
-  })
-)
+// app.use(
+//   rateLimit({
+//     windowMs: 15 * 60 * 1000,
+//     max: 100,
+//     message: '너무 많은 요청을 보냈습니다. 잠시 후 다시 시도하세요.',
+//   })
+// )
 app.use(cookieParser())
 
 // // CSRF 토큰 발급 (필요 없다면 주석 처리)
