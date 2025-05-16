@@ -25,6 +25,7 @@ app.use(
   })
 )
 
+// 1) XSS 방어 및 firstimage 복원 로직 수정
 function sanitizeBody(req, res, next) {
   const clean = obj => {
     if (typeof obj === 'string') return xss(obj)
@@ -37,13 +38,30 @@ function sanitizeBody(req, res, next) {
     }
     return obj
   }
-  if (req.body) req.body = clean(req.body)
+
+  if (req.body) {
+    req.body = clean(req.body)
+    if (req._originalFirstimage !== undefined) {
+      req.body.firstimage = req._originalFirstimage
+    }
+  }
   next()
 }
 
+// 2) 원본 firstimage 보관 미들웨어
 app.use(express.json({ limit: '10kb' }))
-app.use(sanitize({ locations: ['body', 'params'] })) // mongo-sanitize
+app.use((req, res, next) => {
+  if (req.body && typeof req.body.firstimage === 'string') {
+    req._originalFirstimage = req.body.firstimage
+  }
+  next()
+})
+
+// 3) Mongo Injection 방어 (특수문자 제거)
+app.use(sanitize({ locations: ['body', 'params'] }))
+// 4) sanitizeBody 적용
 app.use(sanitizeBody)
+
 app.use(
   rateLimit({
     windowMs: 15 * 60 * 1000,
