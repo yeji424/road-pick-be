@@ -5,10 +5,10 @@ const router = express.Router()
 
 router.post('/', async (req, res) => {
   try {
-    const { token } = req.cookies
-    if (!token) {
-      return res.json({ error: '로그인 필요' })
-    }
+    // const { token } = req.cookies
+    // if (!token) {
+    //   return res.json({ error: '로그인 필요' })
+    // }
     console.log(req.body)
     const { title, startDate, endDate, userId, tripId } = req.body
     const scheduleData = {
@@ -29,10 +29,10 @@ router.post('/', async (req, res) => {
 
 router.get('/list', async (req, res) => {
   try {
-    const { token } = req.cookies
-    if (!token) {
-      return res.json({ error: '로그인 필요' })
-    }
+    // const { token } = req.cookies
+    // if (!token) {
+    //   return res.json({ error: '로그인 필요' })
+    // }
     const scheduls = await Trip.find().sort({ createdAt: -1 })
     res.json(scheduls)
   } catch (err) {
@@ -43,10 +43,10 @@ router.get('/list', async (req, res) => {
 
 router.get('/detail/:scheduleId', async (req, res) => {
   try {
-    const { token } = req.cookies
-    if (!token) {
-      return res.json({ error: '로그인 필요' })
-    }
+    // const { token } = req.cookies
+    // if (!token) {
+    //   return res.json({ error: '로그인 필요' })
+    // }
     const { scheduleId } = req.params
     if (!scheduleId) return
     const schedule = await Trip.findOne({ tripId: scheduleId })
@@ -62,10 +62,10 @@ router.get('/detail/:scheduleId', async (req, res) => {
 
 router.delete('/delete/:scheduleId', async (req, res) => {
   try {
-    const { token } = req.cookies
-    if (!token) {
-      return res.json({ error: '로그인 필요' })
-    }
+    // const { token } = req.cookies
+    // if (!token) {
+    //   return res.json({ error: '로그인 필요' })
+    // }
     const { scheduleId } = req.params
     if (!scheduleId) {
       return res.status(400).json({ error: '일정 ID가 필요합니다.' })
