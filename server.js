@@ -25,6 +25,8 @@ app.use(
   })
 )
 
+app.use(express.json())
+app.use(cookieParser())
 // 1) XSS 방어 및 firstimage 복원 로직 수정
 function sanitizeBody(req, res, next) {
   const clean = obj => {

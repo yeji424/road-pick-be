@@ -27,13 +27,19 @@ router.post('/', async (req, res) => {
   }
 })
 
-router.get('/list', async (req, res) => {
+router.get('/list/:userId', async (req, res) => {
   try {
     // const { token } = req.cookies
     // if (!token) {
     //   return res.json({ error: '로그인 필요' })
     // }
-    const scheduls = await Trip.find().sort({ createdAt: -1 })
+    const { userId } = req.params
+    console.log(userId)
+    if (!userId) {
+      return res.status(400).json({ error: 'userId가 필요합니다' })
+    }
+    const scheduls = await Trip.find({ user: userId }).sort({ createdAt: -1 })
+    console.log(scheduls)
     res.json(scheduls)
   } catch (err) {
     console.log('일정 목록 조회 에러', err)

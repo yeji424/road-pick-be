@@ -74,8 +74,15 @@ router.post(
   }
 )
 
+import rateLimit from 'express-rate-limit'
+
+const profileLimiter = rateLimit({
+  windowMs: 60 * 1000, // 1분
+  max: 10, // 1분에 최대 10회 요청 허용
+  message: '너무 많은 요청을 보내고 있습니다. 잠시 후 다시 시도해주세요.',
+})
 // ── 프로필 조회
-router.get('/profile', async (req, res) => {
+router.get('/profile', profileLimiter, async (req, res) => {
   try {
     const token = req.cookies?.token
     if (!token) return res.status(401).json({ message: '로그인 필요' })
