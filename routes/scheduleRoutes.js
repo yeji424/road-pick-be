@@ -38,7 +38,7 @@ router.get('/list/:userId', async (req, res) => {
     if (!userId) {
       return res.status(400).json({ error: 'userId가 필요합니다' })
     }
-    const scheduls = await Trip.find({ user: userId }).sort({ createdAt: -1 })
+    const scheduls = await Trip.find({ user: userId }).sort({ startDate: 1 })
     console.log(scheduls)
     res.json(scheduls)
   } catch (err) {
