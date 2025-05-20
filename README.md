@@ -1,18 +1,36 @@
 
-# ![image](https://github.com/user-attachments/assets/5a947729-2635-4c94-a99e-30667042bb1f)
+ ![image](https://github.com/user-attachments/assets/5a947729-2635-4c94-a99e-30667042bb1f)
 # RoadPick
 
 <img src="https://github.com/user-attachments/assets/c78bf31c-f7e3-4519-adfa-91be6e9ff6d3" height="500" />
 
 ***
-## 1.Project Overview(프로젝트 개요)
+## 1. Project Overview (프로젝트 개요)
+
+본 프로젝트는 URECA의 미니 프로젝트로, 여행 일정을 효율적으로 관리할 수 있는 웹 플랫폼 **‘로드픽(RoadPick)’**을 개발하는 것을 목표로 합니다.  
+사용자가 쉽고 체계적으로 여행 계획을 세울 수 있도록 돕는 기능을 중심으로, 팀원 간의 협업을 통해 기획부터 디자인, 프론트엔드 구현까지 전 과정을 경험합니다.
+
+- 🔹 프로젝트명: RoadPick
+- 🔹 프로젝트 기간: 2025.05.07 ~ 2025.05.20 (2주)
+- 🔹 개발 인원: 김준서, 김민석, 김예지, 홍석준
+- 🔹 주요 목표: 사용자 맞춤형 여행 일정 관리 기능 구현
+
+## 2. Service Introduction (서비스 소개)
 #### [URECA] Mini Project  김준서, 김민석, 김예지, 홍석준
-로드픽은 여행을 계획하는 모든 사용자를 페르소나로 정하여, 보다 효율적이고 체계적인 여행 일정을 설계할 수 있도록 도와주는 여행 일정 관리 중심 플랫폼입니다.
-다양한 여행지 정보를 제공하고 관련 축제 및 행사 추천 등 풍부한 콘텐츠를 기반으로,
-사용자가 자신만의 맞춤 여행 일정을 쉽게 구성할 수 있도록 제안해 쾌적하고 즐거운 여행 경험을 제공합니다.
+로드픽은 여행을 계획하는 모든 사용자를 대상으로 하지만 특히 바쁜 일상 속에서도 여행을 즐기고자 하는 **20대 사용자**를 주요 페르소나로 설정하였습니다.  
+보다 효율적이고 체계적인 여행 일정을 설계할 수 있도록 돕는 **여행 일정 관리 중심 플랫폼**으로,  
+다양한 여행지 정보와 관련 축제·행사 추천 등 풍부한 콘텐츠를 기반으로  
+사용자가 자신만의 맞춤 여행 일정을 쉽게 구성하고, 즐거운 여행 경험을 누릴 수 있도록 지원합니다.
 ***
 
-## 3. 기술 스택
+## 3.RoadPick에 대해 더 알아보고 싶다면?
+#### RoaPick : [RoadPick 보러가기](https://roadpick.vercel.app/)
+#### FrontEnd : [백엔드 보러가기](https://github.com/yeji424/road-pick-fe)
+#### 약식 기획서 : [약식기획서 보러가기](https://www.figma.com/board/682PYclPlZjnhhKLoljtbP/미니프로젝트2?node-id=0-1&p=f&t=ETvBB8MUwiWQPQku-0)
+#### 디자인 시안 : [디자인 시안 보러가기](https://www.figma.com/board/682PYclPlZjnhhKLoljtbP/미니프로젝트2?node-id=0-1&p=f&t=ETvBB8MUwiWQPQku-0https://www.figma.com/design/2fA8rdz6ypZK6xTvbVprQP/%EB%A1%9C%EB%93%9C%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=22-1770&t=h6zhpXnc8AbktqVj-1)
+#### WBS : [WBS 보러가기](https://docs.google.com/spreadsheets/d/1MeRaUqhyLBdnbJ1xWZwYskkkvgW8nHJ1sbBKV01hfm8/edit?gid=0#gid=0)#### 
+
+## 4. 기술 스택
 ## FrontEnd 
 ### 개발환경 : <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white" />
 ### 프레임워크 : <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black"> 
@@ -25,15 +43,7 @@
 ## Cooperation
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white">  <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=Slack&logoColor=white">  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
 
-
-
-
-## RoadPick
-#### BackEnd : https://github.com/yeji424/road-pick-be
-#### FrontEnd : https://github.com/yeji424/road-pick-fe
-
-
-## 3. ✨Key Features(주요 기능)✨
+## 5. ✨Key Features(주요 기능)✨
 ### 선택 여행지별 축제 및 행사 정보 추천
 선택한 지역 주변에서 진행되는 축제 및 행사 정보를 추천합니다.
 지도 위에서 주변 이벤트를 마커로 시각화해 보여줍니다.
@@ -69,7 +79,7 @@
 
 
 
-## 4.Team Members (팀원 소개)
+## 6.Team Members (팀원 소개)
 <table>
   <tbody>
     <tr> 
@@ -81,7 +91,7 @@
   </tbody>
 </table>
 
-## 5.주요 화면 
+## 7.주요 화면 
 <h3 align="center">📱 주요 화면 미리보기</h3>
 
 <table align="center">
@@ -115,9 +125,8 @@
   </tr>
 </table>
 
-## 6. 폴더 구조
-
-###  BackEnd
+## 8. 폴더 구조
+### BackEnd
 ```
 📦roadpickbe
  ┣ 📂.git
@@ -198,7 +207,7 @@
  ┃ ┗ 📜application.properties
 ```
 
-## Development Workflow (개발 워크플로우)
+## 9. Development Workflow (개발 워크플로우)
 ### 브랜치 전략
 | 커밋 유형 | 의미 |
 | --- | --- |
@@ -232,6 +241,7 @@
   "endOfLine": "auto"
 }
 ```
+
 ## 테이블 구조
  <img src="https://github.com/user-attachments/assets/e8d24147-6b0f-44ff-92bd-e72efd17dfb3" height="400" width="600" />
 
@@ -241,7 +251,10 @@
 
 
 ## 개선 목표
-
+1. **여행 일정 공유**
+    사용자가 직접 작성한 여행 일정을 **함께 여행하는 친구들과 쉽게 공유할 수 있는 기능**을 추가합니다.
+2. **AI를 활용한 여행 일정 및 동선 제시**
+     GPT API를 활용하여 여행 기간을 입력 시, 여행 일정 및 동선을 자동으로 제시합니다.
 
 ## 프로젝트 소감
 
