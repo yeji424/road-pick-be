@@ -42,7 +42,7 @@
 ### DataBase : <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white"> <img src="https://img.shields.io/badge/Mongoose-800000?style=for-the-badge&logo=Mongoose&logoColor=white">
 ## Cooperation
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white">  <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=Slack&logoColor=white">  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
-
+ <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white">
 ## 5. ✨Key Features(주요 기능)✨
 ### 선택 여행지별 축제 및 행사 정보 추천
 선택한 지역 주변에서 진행되는 축제 및 행사 정보를 추천합니다.
