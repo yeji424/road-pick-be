@@ -2,8 +2,6 @@
  ![image](https://github.com/user-attachments/assets/5a947729-2635-4c94-a99e-30667042bb1f)
 # RoadPick
 
-<img src="https://github.com/user-attachments/assets/c78bf31c-f7e3-4519-adfa-91be6e9ff6d3" height="500" />
-
 ***
 ## 1. Project Overview (프로젝트 개요)
 
@@ -313,8 +311,6 @@ lazy를 사용해 import가 된후 생성되게끔,  img에는 loding="lazy"추�
 ## 유저플로우 
  <img src="https://github.com/user-attachments/assets/6909a8da-7f7a-4270-ae40-b23c870c79a9" height="400" width="600" />
 
-
-## 개선 목표
 
 ## 개선 목표
 1. **여행 일정 공유**
