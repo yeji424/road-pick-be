@@ -26,7 +26,7 @@
 ## 3.RoadPick에 대해 더 알아보고 싶다면?
 #### RoaPick : [RoadPick 보러가기](https://roadpick.vercel.app/)
 #### FrontEnd : [프론트 보러가기](https://github.com/yeji424/road-pick-fe)
-### Notion : [노션 보러가기](https://www.notion.so/02-RoadPick-1f2909eda57a80448846f4bff6bb5469)
+#### Notion : [노션 보러가기](https://www.notion.so/02-RoadPick-1f2909eda57a80448846f4bff6bb5469)
 #### 약식 기획서 : [약식기획서 보러가기](https://www.figma.com/board/682PYclPlZjnhhKLoljtbP/미니프로젝트2?node-id=0-1&p=f&t=ETvBB8MUwiWQPQku-0)
 #### 디자인 시안 : [디자인 시안 보러가기](https://www.figma.com/board/682PYclPlZjnhhKLoljtbP/미니프로젝트2?node-id=0-1&p=f&t=ETvBB8MUwiWQPQku-0https://www.figma.com/design/2fA8rdz6ypZK6xTvbVprQP/%EB%A1%9C%EB%93%9C%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=22-1770&t=h6zhpXnc8AbktqVj-1)
 #### WBS : [WBS 보러가기](https://docs.google.com/spreadsheets/d/1MeRaUqhyLBdnbJ1xWZwYskkkvgW8nHJ1sbBKV01hfm8/edit?gid=0#gid=0)#### 
