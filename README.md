@@ -211,6 +211,7 @@
  ┃ ┗ 📜application.properties
 
 ```
+</details>
 
 ## 9. Development Workflow (개발 워크플로우)
 ### 브랜치 전략
