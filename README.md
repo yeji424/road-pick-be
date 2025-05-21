@@ -127,8 +127,11 @@
 </table>
 
 ## 8. 폴더 구조
-### BackEnd
-```
+
+<details>
+  <summary>BackEnd</summary>
+ 
+```plaintext
 📦roadpickbe
  ┣ 📂.git
  ┃ ┣ 📂hooks
@@ -206,6 +209,7 @@
  ┣ 📜package.json
  ┗ 📜server.js
  ┃ ┗ 📜application.properties
+
 ```
 
 ## 9. Development Workflow (개발 워크플로우)
