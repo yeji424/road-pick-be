@@ -128,15 +128,12 @@ router.put('/profile', async (req, res) => {
 })
 // ── 로그아웃
 router.post('/logout', (req, res) => {
-  res
-    .cookie('token', '', {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
-      path: '/',
-      maxAge: 0,
-    })
-    .json({ message: '로그아웃 되었습니다.' })
+  res.clearCookie('token', {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
+    path: '/',
+  }).status(200).json({ message: '로그아웃 되었습니다.' })
 })
 
 router.post('/refresh', (req, res) => {
